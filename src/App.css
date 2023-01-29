@@ -1,0 +1,68 @@
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --text-secondary: #808080;
+  --accent: #bbbff3;
+  --border: #333;
+  --form-bg: #fff;
+  --btn-bg: #000;
+  --input: transparent;
+}
+
+/*Dark theme*/
+[data-theme='dark'] {
+  --background: #000;
+  --text-primary: #fff;
+  --text-secondary: #000;
+  --accent: #393737;
+  --border: #808080;
+  --form-bg: #191919;
+  --btn-bg: #fff;
+  --input: #393725;
+}
+
+
+.app {
+  text-align: center;
+  background-color: var(--background);
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  transition: all .5s;
+}
+
+
+
+.container{
+  background-color: var(--accent);
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height:max-content;
+  box-shadow: 0 0 2rem var(--border);
+  padding: 3rem 3rem;
+  border-radius: 2rem;
+  color: var(--text-primary);
+}
+
+.btn{
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  border-radius: 1rem;
+  background-color: var(--btn-bg);
+  color: var(--text-secondary);
+}
+
+.btn-theme{
+  margin-top: 2rem;
+}
+
+.input{
+  color: var(--text-primary);
+  background-color: var(--input);
+  border: 2px solid var(--border);
+  outline: none;
+
+}
